@@ -73,25 +73,25 @@ dependencies {
     implementation 'com.bytedance.applog:RangersAppLog-All-cn'
 
     //引入immersed内容
-    debugImplementation project(":demos:immersed")
+    implementation project(":demos:immersed")
     //引入permission内容
-    debugImplementation project(":demos:permission")
+    implementation project(":demos:permission")
     //引入screen内容
-    debugImplementation project(":demos:screentools")
+    implementation project(":demos:screentools")
     //引入qrcode内容
-    debugImplementation project(":demos:qrcode")
+    implementation project(":demos:qrcode")
     //引入downloader内容
-    debugImplementation project(":demos:downloader")
+    implementation project(":demos:downloader")
     //引入h5_service服务内容
-    debugImplementation project(":demos:h5_service")
+    implementation project(":demos:h5_service")
     //引入hotfix内容
     implementation project(":demos:hotfix")
     //引入mira内容
-    debugImplementation project(":demos:mira")
+    implementation project(":demos:mira")
     //引入update内容
-    debugImplementation project(":demos:update")
+    implementation project(":demos:update")
     //引入applog内容
-    debugImplementation project(":demos:applog")
+    implementation project(":demos:applog")
     //引入apm内容
-    debugImplementation project(":demos:apm")
+    implementation project(":demos:apm")
 }
