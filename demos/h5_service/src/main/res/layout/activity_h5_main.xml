@@ -28,4 +28,11 @@
         android:text="@string/btn_open_example_offline_activity"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/exampleTTWebViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_open_example_ttwebview_activity"
+        android:textAllCaps="false"/>
+
 </LinearLayout>

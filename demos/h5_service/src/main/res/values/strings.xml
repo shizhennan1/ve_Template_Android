@@ -3,6 +3,7 @@
     <string name="activity_label_h5_main">H5服务</string>
     <string name="activity_label_h5_develop">调试</string>
     <string name="activity_label_h5_example">示例</string>
+    <string name="activity_label_h5_ttwebview">内核示例</string>
 
     <string name="btn_open_js_dialog">打开JS弹窗</string>
     <string name="btn_close">关闭</string>
@@ -10,6 +11,7 @@
     <string name="btn_open_develop_activity">调试页面</string>
     <string name="btn_open_example_online_activity">示例页面(在线)</string>
     <string name="btn_open_example_offline_activity">示例页面(离线)</string>
+    <string name="btn_open_example_ttwebview_activity">内核示例页面</string>
 
     <string name="event_content">这是Native发送的内容</string>
 

@@ -27,6 +27,9 @@
 
         <activity android:name=".OfflineRecordActivity"/>
 
+        <activity android:name=".TTWebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/activity_label_h5_ttwebview" />
     </application>
 
 </manifest>
