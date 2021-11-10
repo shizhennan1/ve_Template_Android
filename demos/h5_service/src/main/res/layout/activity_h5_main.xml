@@ -7,6 +7,13 @@
     tools:context=".H5MainActivity">
 
     <Button
+        android:id="@+id/updateOfflineResourcesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_update_offline_resource"
+        android:textAllCaps="false"/>
+
+    <Button
         android:id="@+id/openDevelopActivityBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

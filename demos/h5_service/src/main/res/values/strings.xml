@@ -8,6 +8,7 @@
     <string name="btn_open_js_dialog">打开JS弹窗</string>
     <string name="btn_close">关闭</string>
 
+    <string name="btn_update_offline_resource">更新离线包</string>
     <string name="btn_open_develop_activity">调试页面</string>
     <string name="btn_open_example_online_activity">示例页面(在线)</string>
     <string name="btn_open_example_offline_activity">示例页面(离线)</string>

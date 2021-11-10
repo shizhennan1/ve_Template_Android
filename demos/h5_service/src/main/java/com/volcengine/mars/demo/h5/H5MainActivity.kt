@@ -19,27 +19,18 @@ class H5MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        VEH5.initialize(
-            application,
-            VEH5Config.Builder()
-                .enableDebug(true)
-                .setDeviceId("7135843788734")
-                .setOfflineResourceAccessKey("d3d71ae74f5383ec33b4fd85b298f50f")
-                .setOfflineResourceUrlPrefixes(getCachePrefixes())
-                .setInternalCacheDirs(listOf("offline-resources"))
-                .enableKernel(true)
-                .setKernelInitListener(object : TTWebSdk.InitListener() {
-                    override fun onDownloadFinished() {
-                        super.onDownloadFinished()
-                        Toast.makeText(this@H5MainActivity, "内核下载完成", Toast.LENGTH_SHORT).show()
-                    }
 
-                    override fun onSoFileUpdateFinished() {
-                        Toast.makeText(this@H5MainActivity, "内核更新完成", Toast.LENGTH_SHORT).show()
-                    }
-                })
-        )
         setContentView(R.layout.activity_h5_main)
+
+        updateOfflineResourcesBtn.setOnClickListener {
+            VEH5.updateOfflineResources(
+                listOf("mars-jsbridge"), CommonUpdateListener(
+                    this.application, Handler(
+                        Looper.getMainLooper()
+                    )
+                )
+            )
+        }
 
         openDevelopActivityBtn.setOnClickListener {
             startActivity(Intent(this, H5DevelopActivity::class.java))
@@ -62,20 +53,7 @@ class H5MainActivity : AppCompatActivity() {
         }
 
         requestPermissions()
-
-        VEH5.updateOfflineResources(
-            listOf("mars-jsbridge"), CommonUpdateListener(
-                this.application, Handler(
-                    Looper.getMainLooper()
-                )
-            )
-        )
     }
-
-    private fun getCachePrefixes() = listOf(
-        Pattern.compile("https://mars-jsbridge.goofy-web.bytedance.com/"),
-        Pattern.compile("https://sf6-scmcdn-tos.pstatp.com/goofy/")
-    )
 
     private fun requestPermissions() {
         ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.WRITE_EXTERNAL_STORAGE), 1)
