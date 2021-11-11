@@ -55,7 +55,8 @@ class OfflineRecordActivity : AppCompatActivity() {
             val matchResult = data[position]
 
             val text = if (matchResult.match) {
-                "[离线] "
+                if (matchResult.version == (0).toLong()) "[内置离线] "
+                else "[离线]"
             } else {
                 "[在线] "
             }
