@@ -9,7 +9,7 @@ public class BaselineDeps {
     /***********************
      ** h5 framework
      ***********************/
-    public static String h5_service = "com.volcengine:h5-service:1.0.0";
+    public static String h5_service = "com.volcengine:h5-service:1.1.0";
 
 
     /***********************
