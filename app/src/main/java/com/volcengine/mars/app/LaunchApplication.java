@@ -3,16 +3,12 @@ package com.volcengine.mars.app;
 import android.app.ActivityManager;
 import android.app.Application;
 import android.content.Context;
-
 import com.bytedance.lego.init.InitScheduler;
 import com.bytedance.lego.init.config.TaskConfig;
 import com.bytedance.lego.init.model.InitPeriod;
 import com.bytedance.lego.init.monitor.InitMonitor;
 import com.volcengine.mars.activity.ActivityStack;
-import com.volcengine.mars.demo.h5.H5Initializer;
 import com.volcengine.mars.utils.AppUtils;
-import com.volcengine.onekit.OneKitApp;
-
 import java.util.List;
 
 public class LaunchApplication extends Application {
@@ -49,7 +45,6 @@ public class LaunchApplication extends Application {
         InitScheduler.config(config);
 
         super.attachBaseContext(base);
-        OneKitApp.initialize(this);
         MPLaunch.INSTANCE.onPeriod(sApplication, InitPeriod.APP_ATTACHBASE2SUPER);
         MPLaunch.INSTANCE.onPeriod(sApplication, InitPeriod.APP_SUPER2ATTACHBASEEND);
     }
@@ -71,7 +66,6 @@ public class LaunchApplication extends Application {
 
     @Override
     public void onCreate() {
-        H5Initializer.INSTANCE.initialize(this);
         ActivityStack.init(this);
         MPLaunch.INSTANCE.onPeriod(sApplication, InitPeriod.APP_ONCREATE2SUPER);
         super.onCreate();
