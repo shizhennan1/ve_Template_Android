@@ -1,6 +1,7 @@
 apply from: rootProject.file('gradle/demo.gradle')
 
 dependencies {
-//    implementation "com.volcengine:h5-service"
-    api BaselineDeps.h5_service
+    implementation "com.volcengine:h5-service"
+    implementation "com.bytedance.lego:init-api"
+    implementation "com.volcengine.onekit:onekit"
 }
