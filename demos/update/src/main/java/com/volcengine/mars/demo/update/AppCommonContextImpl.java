@@ -7,7 +7,12 @@ import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 public class AppCommonContextImpl extends AbsAppCommonContext {
-
+    private static final String HOST_ADDRESS = "https://release-api.vemarsdev.com/v1/gray_release/package";
+    @Override
+    public String getCustomUrl() {
+    return HOST_ADDRESS;
+    }
+    
     private Context mContext;
 
     public AppCommonContextImpl(Context context) {
