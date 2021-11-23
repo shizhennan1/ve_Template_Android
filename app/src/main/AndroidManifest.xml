@@ -13,7 +13,7 @@
 
         <meta-data
             android:name="UPDATE_VERSION_CODE"
-            android:value="1100" />
+            android:value="10101" />
 
         <activity
             android:name=".MarsActivity">
