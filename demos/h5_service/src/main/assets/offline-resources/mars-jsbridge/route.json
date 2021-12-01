@@ -1,0 +1,42 @@
+{
+  "routes": [
+    {
+      "domains": [
+        "mars-jsbridge.goofy-web.bytedance.com"
+      ],
+      "urlPath": "/debug",
+      "isSpa": true,
+      "entryPath": "html/debug/index.html",
+      "isSSR": false,
+      "bundle": "",
+      "disableStream": true,
+      "useI18n": false,
+      "extra": {
+        "entryName": "debug",
+        "loadableManifest": "",
+        "bundle": ""
+      },
+      "specialHeader": [],
+      "enableModernMode": false
+    },
+    {
+      "domains": [
+        "mars-jsbridge.goofy-web.bytedance.com"
+      ],
+      "urlPath": "/example",
+      "isSpa": true,
+      "entryPath": "html/example/index.html",
+      "isSSR": false,
+      "bundle": "",
+      "disableStream": true,
+      "useI18n": false,
+      "extra": {
+        "entryName": "example",
+        "loadableManifest": "",
+        "bundle": ""
+      },
+      "specialHeader": [],
+      "enableModernMode": false
+    }
+  ]
+}

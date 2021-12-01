@@ -2,7 +2,7 @@
  * onekit component gradle script
  */
 project.buildscript.dependencies.with {
-    classpath "com.volcengine.onekit:onekit-plugin:0.0.1-rc.18"
+    classpath "com.volcengine.onekit:onekit-plugin:0.0.1-rc.23"
 }
 
 project.ext.marsAppTasks.put("onekit", { p ->

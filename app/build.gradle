@@ -58,7 +58,7 @@ dependencies {
     implementation BaselineDeps.support_compat
     implementation BaselineDeps.appcompat
 
-    implementation platform ("com.volcengine.mars:platform:0.0.1-rc.44")
+    implementation platform ("com.volcengine.mars:platform:0.0.1-rc.49")
 
     implementation 'com.volcengine.mars:dev-tool'
     implementation 'com.volcengine.mars:base-component'
