@@ -32,7 +32,8 @@ public class UpdateDemoActivity extends AppCompatActivity {
                 Manifest.permission.READ_PHONE_STATE,
                 Manifest.permission.ACCESS_WIFI_STATE,
                 permission.ACCESS_FINE_LOCATION,
-                permission.ACCESS_COARSE_LOCATION
+                permission.ACCESS_COARSE_LOCATION,
+                permission.REQUEST_INSTALL_PACKAGES
         };
         PermissionsManager.getInstance().requestPermissionsIfNecessaryForResult(this, permissions,null);
         setContentView(R.layout.activity_update);

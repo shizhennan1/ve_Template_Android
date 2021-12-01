@@ -1,5 +1,5 @@
 apply from: rootProject.file('gradle/demo.gradle')
 
 dependencies {
-    implementation "com.volcengine.services:update-impl"
+    implementation "com.volcengine.services:update-impl:1.0.0-rc.21"
 }
