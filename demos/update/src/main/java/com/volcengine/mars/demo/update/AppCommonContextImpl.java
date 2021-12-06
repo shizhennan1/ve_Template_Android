@@ -4,6 +4,7 @@ import android.content.Context;
 import com.volcengine.mars.update.AbsAppCommonContext;
 import com.volcengine.mars.update.DeviceWrapper;
 import java.util.Map;
+import java.util.HashMap;
 import org.jetbrains.annotations.NotNull;
 
 public class AppCommonContextImpl extends AbsAppCommonContext {
@@ -36,16 +37,15 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
 //        若接入了applog，或实现了Device接口，可参考注释中的代码获取did，此接口不能返回空字符串
 //        DeviceWrapper deviceService = new DeviceWrapper();
 //        return deviceService.getDeviceID();
-        return "000000";
+        return "12345678901";
     }
 
     @Override
     public Map<String, String> getCustomKV() {
         Map<String, String> customMap = new HashMap<>();
-        customMap.put("user_id", "11223344556601");
-        customMap.put("user_department", "debang-delivery");
-        customMap.put("user_role", "CTO");
+        customMap.put("user_id", "0000001");
+        customMap.put("user_department", "DP09105");
+        customMap.put("user_role", "00010002");
         return customMap;
-
     }
 }
