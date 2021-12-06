@@ -41,10 +41,11 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
 
     @Override
     public Map<String, String> getCustomKV() {
-           Map<String, String> customMap = new HashMap<>();
-           customMap.put("user_id", "11223344556601");
-            customMap.put("user_department", "debang-delivery");
-            customMap.put("user_role", "CTO");
+        Map<String, String> customMap = new HashMap<>();
+        customMap.put("user_id", "11223344556601");
+        customMap.put("user_department", "debang-delivery");
+        customMap.put("user_role", "CTO");
         return customMap;
+
     }
 }
