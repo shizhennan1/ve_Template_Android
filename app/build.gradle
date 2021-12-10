@@ -22,7 +22,7 @@ android {
         applicationId "com.volcengine.mars"
         multiDexEnabled true
 
-        versionCode 37909
+        versionCode 37901
         versionName "3.7.9"
 
     }
