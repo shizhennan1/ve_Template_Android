@@ -37,7 +37,7 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
 //        若接入了applog，或实现了Device接口，可参考注释中的代码获取did，此接口不能返回空字符串
 //        DeviceWrapper deviceService = new DeviceWrapper();
 //        return deviceService.getDeviceID();
-        return "12345678915";
+        return "12345678912";
     }
 
     @Override
