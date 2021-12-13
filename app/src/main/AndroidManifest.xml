@@ -36,6 +36,10 @@
             android:name="UPDATE_VERSION_CODE"
             android:value="32417" />
 
+        <meta-data
+            android:name="DISCOVERY_CHANNEL"
+            android:value="beta" />
+
         <activity
             android:name=".MarsActivity">
             <intent-filter>
