@@ -34,7 +34,7 @@
 
         <meta-data
             android:name="UPDATE_VERSION_CODE"
-            android:value="32415" />
+            android:value="32417" />
 
         <activity
             android:name=".MarsActivity">
