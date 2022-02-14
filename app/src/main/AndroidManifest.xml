@@ -34,7 +34,7 @@
 
         <meta-data
             android:name="UPDATE_VERSION_CODE"
-            android:value="32417" />
+            android:value="32511" />
 
         <meta-data
             android:name="DISCOVERY_CHANNEL"
