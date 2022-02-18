@@ -8,7 +8,7 @@ import java.util.HashMap;
 import org.jetbrains.annotations.NotNull;
 
 public class AppCommonContextImpl extends AbsAppCommonContext {
-    private static final String HOST_ADDRESS = "https://pri-prd-api.vemarsdev.com/v1/gray_release/package";
+    private static final String HOST_ADDRESS = "https://release-api.vemarsdev.com/v1/gray_release/package";
     @Override
     public String getCustomUrl() {
         return HOST_ADDRESS;
@@ -47,9 +47,9 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
     @Override
     public Map<String, String> getCustomKV() {
         Map<String, String> customMap = new HashMap<>();
-        customMap.put("user_id", "1234501");
-        customMap.put("user_department", "DP51214");
-        customMap.put("user_role", "10010015");
+//        customMap.put("user_id", "1234501");
+//        customMap.put("user_department", "DP51214");
+//        customMap.put("user_role", "10010015");
         return customMap;
     }
 }
