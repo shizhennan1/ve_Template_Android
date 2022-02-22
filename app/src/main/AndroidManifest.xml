@@ -37,8 +37,8 @@
             android:value="47733" />
 
         <meta-data
-            android:name="DISCOVERY_CHANNEL"
-            android:value="beta" />
+            android:name="MARS_CHANNEL"
+            android:value="aaa" />
 
         <activity
             android:name=".MarsActivity">
