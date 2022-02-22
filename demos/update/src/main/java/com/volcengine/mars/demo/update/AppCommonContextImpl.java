@@ -37,7 +37,7 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
 //        若接入了applog，或实现了Device接口，可参考注释中的代码获取did，此接口不能返回空字符串
 //        DeviceWrapper deviceService = new DeviceWrapper();
 //        return deviceService.getDeviceID();
-        return "12345678912";
+        return "12345678913";
     }
 //     @Override
 //     public String getChannel() {
@@ -47,7 +47,7 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
     @Override
     public Map<String, String> getCustomKV() {
         Map<String, String> customMap = new HashMap<>();
-        customMap.put("user_id", "1234501");
+        customMap.put("user_id", "1234504");
         customMap.put("user_department", "DP51214");
         customMap.put("user_role", "10010015");
         return customMap;
