@@ -39,17 +39,17 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
 //        return deviceService.getDeviceID();
         return "12345678912";
     }
-    @Override
-    public String getChannel() {
-//        return isDebugApk() ? "local_test" : "release";
-        return "beta";
-    }
+//     @Override
+//     public String getChannel() {
+// //        return isDebugApk() ? "local_test" : "release";
+//         return "beta";
+//     }
     @Override
     public Map<String, String> getCustomKV() {
         Map<String, String> customMap = new HashMap<>();
-//        customMap.put("user_id", "1234501");
-//        customMap.put("user_department", "DP51214");
-//        customMap.put("user_role", "10010015");
+        customMap.put("user_id", "1234501");
+        customMap.put("user_department", "DP51214");
+        customMap.put("user_role", "10010015");
         return customMap;
     }
 }
