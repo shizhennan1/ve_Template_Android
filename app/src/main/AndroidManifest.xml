@@ -38,7 +38,7 @@
 
         <meta-data
             android:name="MARS_CHANNEL"
-            android:value="bbb" />
+            android:value="ddd" />
 
         <activity
             android:name=".MarsActivity">
