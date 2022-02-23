@@ -44,8 +44,8 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
         day = c.get(Calendar.DATE);
         hour = c.get(Calendar.HOUR);
         minute = c.get(Calendar.MINUTE);
-        minute -= minute % 3
-        String timeNow = "" + year+month+day+ hour + minute
+        minute -= minute % 3;
+        String timeNow = "" + year+month+day+ hour + minute;
         return timeNow;
     }
 //    @Override
