@@ -39,12 +39,12 @@ public class AppCommonContextImpl extends AbsAppCommonContext {
 //        DeviceWrapper deviceService = new DeviceWrapper();
 //        return deviceService.getDeviceID();
         final Calendar c = Calendar.getInstance();
-        year = c.get(Calendar.YEAR);
-        month = c.get(Calendar.MONTH);
-        day = c.get(Calendar.DATE);
-        hour = c.get(Calendar.HOUR);
-        minute = c.get(Calendar.MINUTE);
-        minute -= minute % 3;
+       int year = c.get(Calendar.YEAR);
+      int  month = c.get(Calendar.MONTH);
+      int  day = c.get(Calendar.DATE);
+      int  hour = c.get(Calendar.HOUR);
+      int  minute = c.get(Calendar.MINUTE);
+       minute -= minute % 3;
         String timeNow = "" + year+month+day+ hour + minute;
         return timeNow;
     }
