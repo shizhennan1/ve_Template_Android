@@ -34,11 +34,11 @@
 
         <meta-data
             android:name="UPDATE_VERSION_CODE"
-            android:value="51177" />
+            android:value="51188" />
 
         <meta-data
             android:name="MARS_CHANNEL"
-            android:value="" />
+            android:value="ff" />
 
         <activity
             android:name=".MarsActivity">
