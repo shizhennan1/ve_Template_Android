@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Calendar;
 
 public class AppCommonContextImpl extends AbsAppCommonContext {
-    private static final String HOST_ADDRESS = "https://pri-test-api.vemarsdev.com/v1/gray_release/package";
+    private static final String HOST_ADDRESS = "https://pri-prd-api.vemarsdev.com/v1/gray_release/package";
     @Override
     public String getCustomUrl() {
         return HOST_ADDRESS;
