@@ -31,8 +31,6 @@ class CommonWebSettings {
         webView.settings.apply {
             javaScriptEnabled = true
             domStorageEnabled = true
-            setAllowFileAccessFromFileURLs= false
-            setAllowUniversalAccessFromFileURLs=false
         }
     }
     companion object {
