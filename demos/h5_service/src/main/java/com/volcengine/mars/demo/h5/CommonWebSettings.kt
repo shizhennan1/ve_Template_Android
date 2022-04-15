@@ -31,9 +31,10 @@ class CommonWebSettings {
         webView.settings.apply {
             javaScriptEnabled = true
             domStorageEnabled = true
+            setAllowFileAccessFromFileURLs= true
+            setAllowUniversalAccessFromFileURLs=true
         }
     }
-
     companion object {
 
         private const val TAG = "WebSettings"
