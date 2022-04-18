@@ -9,3 +9,8 @@ private void WebViewDebug() {
         webView.setWebContentsDebuggingEnabled(true);
         }
         }
+
+private void WebViewFileRegion() {
+//        webView.getSettings().setAllowFileAccessFromFileURLs(true);
+        webView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        }
