@@ -37,7 +37,9 @@ abstract class BaseH5Activity : AppCompatActivity() {
             FrameLayout.LayoutParams.MATCH_PARENT)
 
         webViewContainer.addView(webView, layoutParams)
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            WebView.setWebContentsDebuggingEnabled(true);
+        }
     }
 
     abstract fun createWebViewContainer(): WebViewContainer
