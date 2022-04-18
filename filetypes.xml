@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="Manifest" type="CLASS" />
+      <mapping pattern="PendingIntentMutable" type="JAVA" />
       <mapping pattern="LocationManager" type="JAVA" />
       <mapping ext="locationmanager" type="JAVA" />
       <mapping pattern="J" type="PLAIN_TEXT" />
