@@ -10,6 +10,55 @@ import com.bytedance.lego.init.monitor.InitMonitor;
 import com.volcengine.mars.activity.ActivityStack;
 import com.volcengine.mars.utils.AppUtils;
 import java.util.List;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.app.Activity
+
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+
+
+private void WebViewDebug() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        webView.setWebContentsDebuggingEnabled(true);
+        }
+        }
+
+private void WebViewFileRegion() {
+//        webView.getSettings().setAllowFileAccessFromFileURLs(true);
+        webView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        }
+
+private void no_test6a(){
+        int flag = PendingIntent.FLAG_UPDATE_CURRENT;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        flag |= PendingIntent.FLAG_IMMUTABLE;
+        }
+        PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), flag);
+        }
+private void no_test6b(){
+        int flag = 0;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        flag = PendingIntent.FLAG_IMMUTABLE;
+        }
+        PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), flag);
+        }
+
+private void no_test6c(){
+        PendingIntent pi = null;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        pi = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
+        }else{
+        pi = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), 0);
+        }
+        pi.cancel();
+        }
+//添加部分函数测试漏洞
+
+
+
+
 
 public class LaunchApplication extends Application {
 
