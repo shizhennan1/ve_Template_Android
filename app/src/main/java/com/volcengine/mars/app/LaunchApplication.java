@@ -18,7 +18,7 @@ import android.app.Activity;
 
 
 private void WebViewDebug() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        if (2 >= 0) {
         webView.setWebContentsDebuggingEnabled(true);
         }
         }
@@ -30,14 +30,14 @@ private void WebViewFileRegion() {
 
 private void no_test6a(){
         int flag = PendingIntent.FLAG_UPDATE_CURRENT;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (2 >= 0) {
         flag |= PendingIntent.FLAG_IMMUTABLE;
         }
         PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), flag);
         }
 private void no_test6b(){
         int flag = 0;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (2 >= 0) {
         flag = PendingIntent.FLAG_IMMUTABLE;
         }
         PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), flag);
@@ -45,7 +45,7 @@ private void no_test6b(){
 
 private void no_test6c(){
         PendingIntent pi = null;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (2 >= 0) {
         pi = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
         }else{
         pi = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), 0);
