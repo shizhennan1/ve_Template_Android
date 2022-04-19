@@ -15,33 +15,40 @@ import android.app.Activity;
 import java.util.List;
 
 
-private void WebViewFileRegion() {
-//        webView.getSettings().setAllowFileAccessFromFileURLs(true);
-        webView.getSettings().setAllowUniversalAccessFromFileURLs(true);
-        }
 
-private void no_test6a(){
-        int flag = PendingIntent.FLAG_UPDATE_CURRENT;
-
-        flag |= PendingIntent.FLAG_IMMUTABLE;
-
-        PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), flag);
-        }
-private void no_test6b(){
-        int flag = 0;
-
-        flag = PendingIntent.FLAG_IMMUTABLE;
-
-        PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), flag);
-        }
-
-private void no_test6c(){
-        PendingIntent pi = null;
-
-        pi = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
-
-        pi.cancel();
-}
+//private void WebViewDebug() {
+//
+//        webView.setWebContentsDebuggingEnabled(true);
+//
+//        }
+//
+//private void WebViewFileRegion() {
+////        webView.getSettings().setAllowFileAccessFromFileURLs(true);
+//        webView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+//        }
+//
+//private void no_test6a(){
+//        int flag = PendingIntent.FLAG_UPDATE_CURRENT;
+//
+//        flag |= PendingIntent.FLAG_IMMUTABLE;
+//
+//        PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), flag);
+//        }
+//private void no_test6b(){
+//        int flag = 0;
+//
+//        flag = PendingIntent.FLAG_IMMUTABLE;
+//
+//        PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), flag);
+//        }
+//
+//private void no_test6c(){
+//        PendingIntent pi = null;
+//
+//        pi = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
+//
+//        pi.cancel();
+//}
 //添加部分函数测试漏洞
 
 
@@ -56,6 +63,16 @@ public class LaunchApplication extends Application {
     public static boolean sIsMainProcess;
 
     private static Context sBaseContext;
+
+    private void WebViewDebug() {
+
+       webView.setWebContentsDebuggingEnabled(true);
+        }
+
+private void WebViewFileRegion() {
+//        webView.getSettings().setAllowFileAccessFromFileURLs(true);
+       webView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        }
 
     public static Context getContext() {
         return sBaseContext;
