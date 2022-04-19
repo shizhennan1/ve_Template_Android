@@ -15,13 +15,6 @@ import android.app.Activity;
 import java.util.List;
 
 
-
-private void WebViewDebug() {
-
-        webView.setWebContentsDebuggingEnabled(true);
-
-        }
-
 private void WebViewFileRegion() {
 //        webView.getSettings().setAllowFileAccessFromFileURLs(true);
         webView.getSettings().setAllowUniversalAccessFromFileURLs(true);
