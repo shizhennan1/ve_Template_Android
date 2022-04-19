@@ -1,0 +1,20 @@
+package com.volcengine.mars.app
+import androidx.appcompat.app.AppCompatActivity;
+import android.webkit.JsResult;
+import android.webkit.SslErrorHandler;
+import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebResourceResponse;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+
+public class BaseWebview extends AppCompatActivity {
+
+    private WebView webView;
+
+    private void WebViewFileRegion() {
+//        webView.getSettings().setAllowFileAccessFromFileURLs(true);
+        webView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+    }
+}

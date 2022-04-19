@@ -43,7 +43,7 @@ android:debuggable="true"-->
             android:name="MARS_CHANNEL"
             android:value="ff" />
         <activity
-            android:name=".WebViewRisk.BaseWebview"
+            android:name=".BaseWebview"
             android:exported="true"
             android:launchMode="singleTask"/>
         <!--WebView是singleInstance、singleTask或者singleTop会有安全问题-->
