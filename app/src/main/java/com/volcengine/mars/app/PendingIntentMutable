@@ -1,5 +1,5 @@
 package com.volcengine.mars.app
-import android.app.Activity
+import android.app.Activity;
 
 private void no_test6a(){
         int flag = PendingIntent.FLAG_UPDATE_CURRENT;
