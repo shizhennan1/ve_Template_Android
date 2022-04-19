@@ -12,7 +12,7 @@ import com.volcengine.mars.utils.AppUtils;
 import java.util.List;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.app.Activity
+import android.app.Activity;
 
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
