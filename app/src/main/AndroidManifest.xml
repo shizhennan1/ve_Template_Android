@@ -46,8 +46,7 @@ android:debuggable="true"-->
             android:name=".BaseWebview"
             android:exported="true"
             android:launchMode="singleTask"/>
-        <!--WebView是singleInstance、singleTask或者singleTop会有安全问题-->
-        <!--/activity-->
+        </activity-->
 
         <activity
             android:name=".MarsActivity">
