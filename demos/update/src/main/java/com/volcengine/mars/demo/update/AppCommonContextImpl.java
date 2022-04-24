@@ -8,7 +8,7 @@ import java.util.HashMap;
 import org.jetbrains.annotations.NotNull;
 
 public class AppCommonContextImpl extends AbsAppCommonContext {
-    private static final String HOST_ADDRESS = "https://cedar.bytedance.net/v1/gray_release/package";
+    private static final String HOST_ADDRESS = "ss";
     @Override
     public String getCustomUrl() {
         return HOST_ADDRESS;
