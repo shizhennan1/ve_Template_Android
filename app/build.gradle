@@ -21,7 +21,7 @@ android {
         targetSdkVersion TARGET_SDK_VERSION
         applicationId "com.volcengine.mars"
         multiDexEnabled true
-        versionCode 55617
+        versionCode 55618
         versionName "5.5.6"
 
     }
