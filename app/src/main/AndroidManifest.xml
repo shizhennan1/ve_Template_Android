@@ -35,7 +35,7 @@
 android:debuggable="true"-->
         <meta-data
             android:name="UPDATE_VERSION_CODE"
-            android:value="55621" />
+            android:value="55622" />
 
         <meta-data
             android:name="MARS_CHANNEL"
