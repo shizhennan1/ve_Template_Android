@@ -7,8 +7,8 @@
     
      <uses-permission
         android:name="android.location.LocationManager#requestLocationUpdates" />
-    <!--uses-permission
-        android:name="android.permission.ACCESS_FINE_LOCATION" /-->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!--收集地理位置信息-->
 
     <uses-permission
@@ -34,13 +34,11 @@
 
         <meta-data
             android:name="UPDATE_VERSION_CODE"
-            android:value="41133" />
+            android:value="55702" />
+
         <meta-data
-            android:name ="MARS_CHANNEL"
-            android:value="aaa"/>
-        <meta-data
-            android:name="DISCOVERY_CHANNEL"
-            android:value="beta" />
+            android:name="MARS_CHANNEL"
+            android:value="ff" />
 
         <activity
             android:name=".MarsActivity">
