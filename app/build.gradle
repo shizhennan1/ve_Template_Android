@@ -22,7 +22,7 @@ android {
         applicationId "com.volcengine.mars"
         multiDexEnabled true
 
-        versionCode 55626
+        versionCode 55627
         versionName "5.5.6"
 
     }
