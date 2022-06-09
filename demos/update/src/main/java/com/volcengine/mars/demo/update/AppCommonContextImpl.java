@@ -8,7 +8,7 @@ import java.util.HashMap;
 import org.jetbrains.annotations.NotNull;
 
 public class AppCommonContextImpl extends AbsAppCommonContext {
-    private static final String HOST_ADDRESS = "";
+    private static final String HOST_ADDRESS = "x";
     @Override
     public String getCustomUrl() {
         return HOST_ADDRESS;
