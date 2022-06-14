@@ -8,7 +8,7 @@ import java.util.HashMap;
 import org.jetbrains.annotations.NotNull;
 
 public class AppCommonContextImpl extends AbsAppCommonContext {
-    private static final String HOST_ADDRESS = "https://dispatch-mars.zhaopin.com/v1/gray_release/package";
+    private static final String HOST_ADDRESS = "x";
     @Override
     public String getCustomUrl() {
         return HOST_ADDRESS;
