@@ -39,7 +39,9 @@
         <meta-data
             android:name="MARS_CHANNEL"
             android:value="ff" />
-
+        <meta-data
+            android:name="CHANNEL"
+            android:value="aaaa" />
         <activity
             android:name=".MarsActivity">
             <intent-filter>
