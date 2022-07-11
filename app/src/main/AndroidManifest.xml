@@ -34,7 +34,7 @@
 
         <meta-data
             android:name="UPDATE_VERSION_CODE"
-            android:value="55659" />
+            android:value="55660" />
 
         <meta-data
             android:name="MARS_CHANNEL"
